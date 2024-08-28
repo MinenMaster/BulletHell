@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Das erste HTML5 Spiel</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="background">
+            <div id="start-menu" class="menu">
+                <h1>Bullet Hell v.1</h1>
+                <button id="start-button">Start Game</button>
+                <button id="level1Button">Level 1</button>
+                <button id="level2Button">Level 2</button>
+                <button id="level3Button">Level 3</button><br>
+                <button id="start-help-button">Help</button>
+                <button id="start-info-button">Info</button>
+            </div>
+            <div id="gameContainer" class="hidden">
+                <div id="gamediv">
+                    <canvas id="canvas"></canvas>
+                    <canvas id="pcanvas"></canvas>
+                </div>
+                <div id="hp" class = "scores">HP: 100</div>
+                <div id="score" class = "scores">Score: 0</div>
+                <div id="highScore" class = "scores">High Score: 0</div>
+            </div>
+            <div id="game-over-menu" class="menu hidden">
+                <h1>Game Over</h1>
+                <div id="endScore" class = "endScores">Score: 0</div>
+                <div id="endHighScore" class = "endScores">High Score: 0</div>
+                <button id="restart-button">Restart</button><br>
+                <button id="end-help-button">Help</button>
+                <button id="end-info-button">Info</button>
+            </div>
+            <div id="help-menu" class="menu hidden">
+                <h1>Controls</h1>
+                <p>Shooting: <br>Aim with your mouse pointer and left-click to shoot. <br>Press the F-key for a temporary machine gun. <br>Press the spacebar for a round burst. </p>
+                <img src="images/shoot_help.png">
+                <p>Moving: Press W A S D to move in desired direction. </p>
+                <img src="images/move_help.png">
+                <br>
+                <button id="h-back-button">Back</button>
+            </div>
+            <div id="info-menu" class="menu hidden">
+                <h1>Info</h1>
+                <p>This is a small school Project made by <strong>Dominik Meister</strong> where programming languages like HTML5 or JavaScript were used. <br>Die Idee ist, man den Schüssen der Gegner ausweicht und man die Blau und Lila farbigen Gegner entweder Abschiesst oder "überfährt" und somit einen möglichst hohen Score erreicht. </p>
+                <br>
+                <button id="i-back-button">Back</button>
+            </div>
+        </div>
+        <script src="Game.js"></script>
+    </body>
+</html>

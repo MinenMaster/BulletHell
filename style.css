@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    padding: 2px 4px;
+    margin-top: 10px;
+}
+
+#background {
+    background-image: radial-gradient(#757575, #000000);
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+#canvas {
+    background-image: url("images/void.png");
+    position: absolute; top: 10%; left: 10%;
+}
+
+#pcanvas {
+    position: absolute;
+}
+
+.scores {
+    color: white;
+    font-size: 24px;
+    padding-left: 10px;
+    padding-top: 10px;
+    max-width: 10%;
+}
+
+.endScores {
+    color: white;
+    font-size: 22px;
+    padding-top: -10px;
+    padding-bottom: 10px;
+}
+
+.menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#help-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.6);
+    height: auto;
+    margin: 0px auto;
+    border-radius: 18px;
+}
+
+#help-menu.hidden {
+    display: none;
+}
+
+#info-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.6);
+    height: auto;
+    margin: 0px auto;
+    border-radius: 18px;
+}
+
+#info-menu.hidden {
+    display: none;
+}
